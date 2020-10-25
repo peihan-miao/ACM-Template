@@ -241,6 +241,7 @@ LL Pollard_Rho(LL n,LL c)//寻找一个因子
 
 int total;//因子的个数
 LL factor[N];//存储所有因子的数组，无序的
+//注意不能1会出问题
 void Find_fac(LL n)//对n进行素因子分解，存入factor
 {
     if(Miller_Rabin(n))//是素数就把这个素因子存起来
